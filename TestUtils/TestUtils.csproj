@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>StoneAge.TestUtils</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Some useful utils for testing dotnet core stuff</Description>
+    <PackageId>StoneAge.DotNetCore.TestUtils</PackageId>
+    <Authors>Travis Frisinger</Authors>
+    <Company>StoneAge Technologies</Company>
+    <Product>StoneAge.DotNetCore.TestUtils</Product>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
