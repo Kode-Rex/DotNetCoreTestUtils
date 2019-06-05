@@ -9,7 +9,9 @@
     <Authors>Travis Frisinger</Authors>
     <Company>StoneAge Technologies</Company>
     <Product>StoneAge.DotNetCore.TestUtils</Product>
-    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageReleaseNotes>Added Fetch_Entries_For(LogLevel) to make test assertions easier</PackageReleaseNotes>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

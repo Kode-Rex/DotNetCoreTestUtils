@@ -13,7 +13,11 @@ namespace StoneAge.TestUtils
             LogEntries = new Dictionary<LogLevel, List<string>>();
         }
 
-        public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
+        public void Log<TState>(LogLevel logLevel, 
+                                EventId eventId, 
+                                TState state, 
+                                Exception exception, 
+                                Func<TState, Exception, string> formatter)
         {
             if (!LogEntries.ContainsKey(logLevel))
             {
@@ -21,6 +25,11 @@ namespace StoneAge.TestUtils
             }
 
             LogEntries[logLevel].Add(state.ToString());
+        }
+
+        public List<string> Fetch_Entries_For(LogLevel level)
+        {
+            return LogEntries[level];
         }
 
         public bool IsEnabled(LogLevel logLevel)
