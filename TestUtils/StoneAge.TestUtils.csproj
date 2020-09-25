@@ -9,11 +9,9 @@
     <Authors>Travis Frisinger</Authors>
     <Company>StoneAge Technologies</Company>
     <Product>StoneAge.DotNetCore.TestUtils</Product>
-    <PackageReleaseNotes>Added MockOptions&lt;T&gt; for testing constructors that take IOptions&lt;T&gt; from IoC
-AND
-Added MockOptionsSnapshot&lt;T&gt; for testing constructors that take IOptionsSnapshot&lt;T&gt; from IoC</PackageReleaseNotes>
-    <Version>1.1.0</Version>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <PackageReleaseNotes>Added TestHttpClientBuilder to build HttpClients that do not contact a real website</PackageReleaseNotes>
+    <Version>1.2.0</Version>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
