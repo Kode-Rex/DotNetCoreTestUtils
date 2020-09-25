@@ -20,12 +20,12 @@ namespace StoneAge.TestUtils
             return this;
         }
 
-        public HttpClient Create()
+        public (HttpClient,TestHttpMessageHandler) Create()
         {
             var handler = new TestHttpMessageHandler()
                                 .With_Payload(_payload);
 
-            return new HttpClient(handler);
+            return (new HttpClient(handler), handler);
         }
     }
 }

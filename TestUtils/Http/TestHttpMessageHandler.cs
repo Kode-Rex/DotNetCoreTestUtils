@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace StoneAge.TestUtils
 {
-    internal class TestHttpMessageHandler : HttpMessageHandler
+    public class TestHttpMessageHandler : HttpMessageHandler
     {
         private readonly List<string> _urlPayload;
         private int _requestCount;
