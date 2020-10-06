@@ -9,9 +9,9 @@
     <Authors>Travis Frisinger</Authors>
     <Company>StoneAge Technologies</Company>
     <Product>StoneAge.DotNetCore.TestUtils</Product>
-    <PackageReleaseNotes>Added TestHttpClientBuilder to build HttpClients that do not contact a real website - Now returns the TestHttpMessageHandler so you can assert the request was correct</PackageReleaseNotes>
-    <Version>1.2.1</Version>
-    <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <PackageReleaseNotes>Made MockLogger use ConcurrentDictionary to make it thread safe</PackageReleaseNotes>
+    <Version>1.2.2</Version>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

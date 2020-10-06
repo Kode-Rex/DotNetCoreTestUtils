@@ -1,16 +1,17 @@
 ﻿using Microsoft.Extensions.Logging;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 
 namespace StoneAge.TestUtils
 {
     public class MockLogger<T> : ILogger<T>
     {
-        public IDictionary<LogLevel, List<string>> LogEntries { get; }
+        public ConcurrentDictionary<LogLevel, List<string>> LogEntries { get; }
 
         public MockLogger()
         {
-            LogEntries = new Dictionary<LogLevel, List<string>>();
+            LogEntries = new ConcurrentDictionary<LogLevel, List<string>>();
         }
 
         public void Log<TState>(LogLevel logLevel, 
