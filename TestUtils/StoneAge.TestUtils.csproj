@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <AssemblyName>StoneAge.TestUtils</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Some useful utils for testing dotnet core stuff</Description>
@@ -9,14 +9,14 @@
     <Authors>Travis Frisinger</Authors>
     <Company>StoneAge Technologies</Company>
     <Product>StoneAge.DotNetCore.TestUtils</Product>
-    <PackageReleaseNotes>.net5 update</PackageReleaseNotes>
-    <Version>5.0.0</Version>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <PackageReleaseNotes>.net7 update</PackageReleaseNotes>
+    <Version>7.0.0</Version>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
   </ItemGroup>
 
 </Project>
