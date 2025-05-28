@@ -24,11 +24,5 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     
-    - name: Pack
-      run: dotnet pack --no-build --output ./nupkgs
-    
-    - name: Upload NuGet packages
-      uses: actions/upload-artifact@v3
-      with:
-        name: nuget-packages
-        path: ./nupkgs/*.nupkg 
+    - name: Test
+      run: dotnet test --no-build 
