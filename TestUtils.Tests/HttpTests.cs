@@ -24,17 +24,20 @@ public class HttpTests
     }
 
     [Test]
-    public void TestHttpClientBuilder_WithPayload_SetsPayload()
+    public async Task TestHttpClientBuilder_WithPayload_SetsPayload()
     {
         // Arrange
         var expectedPayload = "{\"name\":\"test\"}";
         var builder = new TestHttpClientBuilder();
 
         // Act
-        var (client, _) = builder.With_Payload(expectedPayload).Create();
+        var (client, handler) = builder.With_Payload(expectedPayload).Create();
+        var response = await client.GetAsync("https://test.com");
+        var actualPayload = await response.Content.ReadAsStringAsync();
 
         // Assert
         Assert.That(client, Is.Not.Null);
+        Assert.That(actualPayload, Is.EqualTo(expectedPayload));
     }
 
     [Test]
